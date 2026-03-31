@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+body {
+    padding: 20px;
+    background-image: url(/img/imagenfondoPagina.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: "Titan One", sans-serif;
+}
+
+*{
+box-sizing: border-box;
+/*controlar dimensiones sin que se vean afectadas
+por el border o por el paddinga*/
+margin:0;
+padding: 0;
+}
+/*clases especiales*/
+.borde{
+border:1px solid gray;
+}
+
+.titulo {
+    border: 1px solid gray;
+    height: 50px;
+    padding: 52px;
+    background-color: rgba(0, 0, 0,);
+    font-family: "Titan One", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*navegador*/
+nav{
+width: 100%;
+height: 50px;
+background-color: #F70C0C;
+position: fixed;
+max-width: 1280px;
+}
+/*La suma da 100=65+15+20*/
+.logo{
+width: 20%;
+height: 100%;
+float: left;
+padding: 5px;
+text-align: center;
+}
+
+.logo img{
+width: 40px;
+height: 40px;
+border-radius: 60%;
+
+}
+.navegacion{
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+.ingreso {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+/*#titulo1{
+width: 100%;
+height: 50px;
+}*/
+
+.contenedor {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+main#portafolio{/*tiene que estar pegado para que sepa que es de esa etiqueta
+si se separa pensara que es de alguna del interior*/
+width: 100%;
+height: 550px;
+background: rgba(255, 0, 0, 0.61);
+}
+.div-porta{
+width: 33.33%;
+height:100%;
+float: left;
+text-align: center;
+padding: 50px;
+font-size: 13px;
+}
+.div-porta img {
+    width: 150px;
+    height: 150px;
+    margin: 40px 0px 0px;
+    border-radius: 50%;
+}
+/*quinenes-somos
+#titulo2{
+width: 100%;
+height: 50px;
+}*/
+section#quienes-somos{
+width: 100%;
+height: 550px;
+}
+.fila{
+width: 100%;
+height: 33.33%;
+}
+.col-ext{
+width: 40%;
+height: 100%;
+float: left;
+}
+.col-cen{
+width: 20%;
+height: 100%;
+float: left;
+}
+/*contactenos
+#titulo3{
+width: 100%;
+height: 50px;
+}*/
+section#contactenos{
+width: 100%;
+height: 550px;
+}
+.div-contacto{
+width: 50%;
+height: 100%;
+float: left;
+
+}
+
+
+.div-arr iframe{
+    width: 100%;
+    height: 100%;
+    /*padding: 30px;*/
+    border: 0;
+}
+.div-arr{
+width: 100%;
+height:70%;
+}
+.div-aba{
+width: 100%;
+height:30%;
+padding: 2px;
+background: rgb(255, 255, 255,0.9);
+}
+
+.direccion{
+    margin-top: 10px;
+}
+
+.ig{
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    margin-top: 10px;
+}
+/*footer*/
+footer{
+width: 100%;
+height: 50px;
+background-color: red   ;
+}
+
+header{
+    width: 100%;
+    height: 550px;
+    background-image: url(/img/imagenfondoYE.jpg);
+    background-size: 100% 100%;
+}
+
+
+
+nav ul{
+    list-style: none;
+    text-align: right;
+}
+nav ul li{  
+    width: 130px;
+    background-color: #F70C0C;
+}
+nav .navegacion>ul>li{
+
+display:inline-block;
+}
+
+nav .ingreso ul li{
+    width: 100%;
+
+}
+nav ul li a{    
+    display:block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 2px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+/*Recuerde hover es una pseudo-clase
+el proposito es que algo cambie o resalte cuando pase el cursor
+por descendencia el elemento <a> tendrá este efecto*/
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgb(0, 0, 0);
+
+}
+
+/*nivel 1 -primer despliegue*/
+nav li ul{
+    position: absolute;
+    display: none;
+}
+nav ul li:hover>ul{
+    display: block;
+}
+
+nav .ingreso li ul{
+    width: 14%;
+}
+nav li ul li{
+    position: relative;
+}
+/*nivel 2 -despligues laterales+*/
+nav li ul li ul{
+    left: 130px;
+    top: 2px;
+}
