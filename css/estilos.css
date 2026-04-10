@@ -2,7 +2,7 @@
 
 body {
     padding: 20px;
-    background-image: url(/img/imagenfondoPagina.png);
+    background-image: url(../img/imagenfondoPagina.png);
     background-size: 100% 100%;
     background-attachment: fixed;
     font-family: "Titan One", sans-serif;
@@ -172,7 +172,7 @@ background-color: red   ;
 header{
     width: 100%;
     height: 550px;
-    background-image: url(/img/imagenfondoYE.jpg);
+    background-image: url(../img/imagenfondoYE.jpg);
     background-size: 100% 100%;
 }
 
